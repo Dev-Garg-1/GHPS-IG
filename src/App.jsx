@@ -1,8 +1,12 @@
 import './App.css'
+import { Button } from "@/components/ui/button";
+
 
 function App() {
   return (
-    <div>hello</div>
+    <div className="flex justify-center items-center h-screen">
+      <Button>Welcome to School Website 🚀</Button>
+    </div>
   )
 }
 
