@@ -1,15 +1,19 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import SocialSidebar from "./components/SocialSidebar"; 
 import Home from "./pages/Home";
 import About from "./pages/About";
 
 function App() {
   return (
     <Router>
-      <div className="min-h-screen flex flex-col">
+      <div className="min-h-screen flex flex-col relative">
         {/* Navbar */}
         <Navbar />
+
+        {/* Social Sidebar */}
+        <SocialSidebar /> {/* ✅ Add here */}
 
         {/* Main Content */}
         <main className="flex-grow">
