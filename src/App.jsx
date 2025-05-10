@@ -4,6 +4,8 @@ import Footer from "./components/Footer";
 import SocialSidebar from "./components/SocialSidebar"; 
 import Home from "./pages/Home";
 import About from "./pages/About";
+import Infrastrucutre from './pages/Infrastrucutre'
+import IndoGerman from './pages/IndoGerman';
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
+            <Route path="/infrastructure" element={<Infrastrucutre />} />
+            <Route path="/indo-german" element={<IndoGerman />} />
           </Routes>
         </main>
 

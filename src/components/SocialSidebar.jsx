@@ -1,5 +1,6 @@
 import React from 'react';
-import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
+import { FaFacebookF, FaInstagram, FaYoutube } from 'react-icons/fa';
+import {FaXTwitter } from 'react-icons/fa6';
 
 function SocialSidebar() {
   const socials = [
@@ -14,9 +15,9 @@ function SocialSidebar() {
       color: '#E4405F', // Instagram pink
     },
     {
-      icon: <FaTwitter />,
+      icon: <FaXTwitter />,
       link: 'https://twitter.com/YOUR_PAGE',
-      color: '#1DA1F2', // Twitter blue
+      color: '#1F1F1F', // Twitter black
     },
     {
       icon: <FaYoutube />,

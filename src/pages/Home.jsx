@@ -8,7 +8,6 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 import schoolImage from '@/assets/school.jpg';
-// 👉 add your team images here:
 import presidentImg from '@/assets/president.jpg';
 import chairmanImg from '@/assets/chairman.png';
 import managerImg from '@/assets/manager.png';
