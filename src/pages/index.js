@@ -7,6 +7,8 @@ import IndoGerman from "./IndoGerman";
 import Infrastructure from "./Infrastrucutre";
 import Layout from "./Layout";
 import ProudMoments from "./ProudMoments";
+import ComingSoon from "./ComingSoon";
+import NotFound from "./NotFound";
 
 export {
   About,
@@ -17,5 +19,7 @@ export {
   IndoGerman,
   Infrastructure,
   Layout,
-  ProudMoments
+  ProudMoments,
+  ComingSoon,
+  NotFound,
 };

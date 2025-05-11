@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import {Layout, Home, About, Infrastructure, IndoGerman, Activities, ProudMoments, AlumniForm, Achievements} from "./pages";
+import {Layout, Home, About, Infrastructure, IndoGerman, Activities, ProudMoments, AlumniForm, Achievements, ComingSoon, NotFound} from "./pages";
 import { Loader } from "./components";
 
 function App() {
@@ -29,6 +29,11 @@ function App() {
             <Route path="/proud-moments" element={<ProudMoments />} />
             <Route path="/alumni-form" element={<AlumniForm />} />
             <Route path="/achievements" element={<Achievements />} />
+            <Route path="/newsletter" element={<ComingSoon />} />
+            <Route path="/circulars" element={<ComingSoon />} />
+            <Route path="/resource" element={<ComingSoon />} />
+            {/* 404 Catch-All Route */}
+            <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
       )}
