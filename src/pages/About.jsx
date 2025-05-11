@@ -1,5 +1,5 @@
 import React from 'react';
-import schoolImage from '../assets/school.jpg';
+import {schoolImg} from '../assets/infra/index.js';
 
 function About() {
   return (
@@ -11,7 +11,7 @@ function About() {
 
       <div className="my-6">
           <img
-            src={schoolImage}
+            src={schoolImg}
             alt="GHPS India Gate"
             className="rounded-xl shadow-lg w-full object-cover max-h-[400px]"
           />

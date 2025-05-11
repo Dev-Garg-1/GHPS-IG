@@ -2,12 +2,7 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { FaPlaneArrival, FaUsers, FaMapMarkedAlt, FaHandshake, FaGlobe } from 'react-icons/fa';
-import arrivalImg from '../assets/arrival.png';
-import welcomeImg from '../assets/welcome.png';
-import cultureImg from '../assets/culture.png';
-import sevaImg from '../assets/seva.png';
-import heritageImg from '../assets/heritage.png';
-import gatkaImg from '../assets/gatka.png';
+import { arrivalImg, welcomeImg, cultureImg, sevaImg, heritageImg, gatkaImg } from '../assets/indo-german/index.js';
 
 
 function IndoGerman() {

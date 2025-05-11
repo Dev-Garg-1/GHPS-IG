@@ -1,8 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaChevronDown } from "react-icons/fa";
-import schoolLogo from "@/assets/school-logo.jpg";
-import sahibLogo from "@/assets/sahib-ji-logo.jpg";
+import { schoolLogo, sahibLogo } from "../assets/logo/index.js";
 
 function Navbar() {
   const [openDropdown, setOpenDropdown] = useState(null);

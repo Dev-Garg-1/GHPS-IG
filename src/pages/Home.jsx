@@ -7,13 +7,8 @@ import 'swiper/css/effect-fade';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-import schoolImage from '@/assets/school.jpg';
-import presidentImg from '@/assets/president.jpg';
-import chairmanImg from '@/assets/chairman.png';
-import managerImg from '@/assets/manager.png';
-import principalImg from '@/assets/principal.png';
-import vicePrincipalImg from '@/assets/vicePrincipal.png';
-import headmistressImg from '@/assets/headmistress.png';
+import {schoolImg} from '../assets/infra';
+import { presidentImg, chairmanImg, managerImg, principalImg, vicePrincipalImg, headmistressImg } from '../assets/leaders/index.js';
 
 function Home() {
   const [count, setCount] = useState({
@@ -131,7 +126,7 @@ function Home() {
 
         <div className='flex-1 flex justify-center mt-6 md:mt-0 md:ml-8'>
           <img
-            src={schoolImage}
+            src={schoolImg}
             alt='school'
             className='w-full max-w-[700px] h-[300px] object-cover rounded-3xl shadow-xl'
           />
