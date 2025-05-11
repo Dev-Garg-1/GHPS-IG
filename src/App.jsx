@@ -1,30 +1,37 @@
+import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Layout from "./pages/Layout"; // 👈 Import your layout
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Infrastrucutre from "./pages/Infrastrucutre";
-import IndoGerman from "./pages/IndoGerman";
-import Activities from "./pages/Activities";
-import ProudMoments from "./pages/ProudMoments";
-import AlumniForm from "./pages/AlumniForm";
-import Achievements from "./pages/Achievements";
+import {Layout, Home, About, Infrastructure, IndoGerman, Activities, ProudMoments, AlumniForm, Achievements} from "./pages";
+import { Loader } from "./components";
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000); 
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <Router>
-      <Routes>
-        {/* Layout Route Wraps All Pages */}
-        <Route element={<Layout />}>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/infrastructure" element={<Infrastrucutre />} />
-          <Route path="/indo-german" element={<IndoGerman />} />
-          <Route path="/activities" element={<Activities />} />
-          <Route path="/proud-moments" element={<ProudMoments />} />
-          <Route path="/alumni-form" element={<AlumniForm />} />
-          <Route path="/achievements" element={<Achievements />} />
-        </Route>
-      </Routes>
+      {loading ? (
+        <Loader />
+      ) : (
+        <Routes>
+          <Route element={<Layout />}>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/infrastructure" element={<Infrastructure />} />
+            <Route path="/indo-german" element={<IndoGerman />} />
+            <Route path="/activities" element={<Activities />} />
+            <Route path="/proud-moments" element={<ProudMoments />} />
+            <Route path="/alumni-form" element={<AlumniForm />} />
+            <Route path="/achievements" element={<Achievements />} />
+          </Route>
+        </Routes>
+      )}
     </Router>
   );
 }
